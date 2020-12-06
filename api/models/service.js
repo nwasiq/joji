@@ -34,7 +34,15 @@ const ServiceSchema = new Schema({
   },
   tags: [{
     type: String
-  }]
+  }],
+  intern: {
+    phone: {
+      type: String
+    },
+    name: {
+      type: String
+    }
+  }
 })
 ServiceSchema.index({ location: '2dsphere' })
 
