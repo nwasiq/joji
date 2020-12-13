@@ -31,11 +31,11 @@ exports.create = async function (req, res) {
     res.send(savedEntity)
   } catch (err) {
     if (err.message) {
-      return res.send({
+      return res.status(400).send({
         message: err.message
       })
     }
-    res.send(err)
+    res.status(500).send(err)
   }
 }
 
