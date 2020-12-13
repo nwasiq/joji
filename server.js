@@ -13,6 +13,7 @@ require('dotenv').config() // include environment variables
  */
 
 const Service = require('./api/models/service')
+const ServiceType = require('./api/models/servicetype')
 mongoose.plugin(schema => {
   schema.options.usePushEach = true
 })
@@ -44,4 +45,4 @@ app.get('*', (req, res) => {
 })
 app.listen(port)
 
-console.log('Joji api started at: ' + port)
+console.log('Wots api started at: ' + port)

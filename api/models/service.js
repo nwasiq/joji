@@ -35,7 +35,7 @@ const ServiceSchema = new Schema({
   tags: [{
     type: String
   }],
-  intern: {
+  collector: {
     phone: {
       type: String
     },
