@@ -29,9 +29,9 @@ const ServiceSchema = new Schema({
     type: String,
     required: true
   },
-  picture: {
+  pictures: [{
     type: String
-  },
+  }],
   tags: [{
     type: String
   }],
